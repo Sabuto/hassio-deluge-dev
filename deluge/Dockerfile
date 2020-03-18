@@ -6,6 +6,7 @@ ENV PYTHON_EGG_CACHE="/config/plugins/.python-eggs"
 RUN \
   echo "*** add repos ***" \
   apt-get update && \
+  mkdir /etc
   ll -a /etc
   # apt-get install -y \
           # gnupg
